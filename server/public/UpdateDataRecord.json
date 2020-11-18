@@ -1,0 +1,24 @@
+{
+  "UpdateDataRecord": [
+    {
+      "id": 1,
+      "prototype_data_id": "202011151021",
+      "prototype_data_name": "开放平台一期",
+      "prototype_data": "http://127.0.0.1:8006/原型-开放平台一期-0813/index.html",
+      "prototype_data_category": "搜索",
+      "prototype_data_remark": "测试1",
+      "prototype_data_create_time": "2020-11-14-00-00-00",
+      "prototype_data_update_time": "2020-11-15-01-00-00"
+    },
+    {
+      "id": 2,
+      "prototype_data_id": "202011151021",
+      "prototype_data_name": "开放平台二期",
+      "prototype_data": "http://127.0.0.1:8006/原型-开放平台一期-0813/index.html",
+      "prototype_data_category": "搜索",
+      "prototype_data_remark": "百度改成QQ",
+      "prototype_data_create_time": "2020-11-14-00-00-00",
+      "prototype_data_update_time": "2020-11-15-02-00-00"
+    }
+  ]
+}

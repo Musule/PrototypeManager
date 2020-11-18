@@ -1,0 +1,114 @@
+@url=http://localhost:8006
+@type_json=Content-Type: application/json
+@type_mp4=Content-Type: video/mpeg4	
+@token=''
+
+### 查询分类（获取Category.json文件的内容，返回数组对象）
+GET  {{url}}/select_category HTTP/1.1
+
+
+### 添加分类（向Category.json文件添加数据）
+POST  {{url}}/add_category HTTP/1.1
+{{type_json}}
+
+{
+    "category_id": "7",
+    "category_name":"分类7",
+    "category_create_time":"2020-06-26-15-00-00",
+    "category_is_delete": false
+}
+
+### 更改分类（根据ID，更改对应分类名称和时间）
+PUT   {{url}}/update_category HTTP/1.1
+{{type_json}}
+
+{
+    "category_id": "7",
+    "category_name":"分类77",
+    "category_create_time":"2020-06-24-07-00-00",
+    "category_is_delete": false
+}
+
+### 删除分类（根据ID）
+DELETE    {{url}}/delete_category HTTP/1.1
+{{type_json}}
+
+{
+    "category_id": 7
+}
+
+
+### 查询url（获取PrototypeData.json文件的内容，返回数组对象）
+GET  {{url}}/select_prototype_data HTTP/1.1
+
+### 查询url（指定名称支持模糊匹配+精确匹配，返回数组对象）
+POST  {{url}}/search_prototype_data_condition HTTP/1.1
+{{type_json}}
+
+{
+      "prototype_data_name": "淘宝"
+}
+
+### 添加url（向PrototypeData.json文件添加数据）
+POST  {{url}}/add_prototype_data HTTP/1.1
+{{type_json}}
+
+{
+      "prototype_data_id": "7",
+      "prototype_data_name": "YY",
+      "prototype_data": "http://www.yy.com",
+      "prototype_data_category":"分类1",
+      "prototype_data_remark": "YY首页",
+      "prototype_data_create_time": "2020-06-27-18-00-00",
+      "prototype_data_is_delete": false
+}
+
+### 更改url（根据ID，更改对应url数据）
+PUT   {{url}}/update_prototype_data HTTP/1.1
+{{type_json}}
+
+{
+      "prototype_data_id": "7",
+      "prototype_data_name": "京东",
+      "prototype_data": "http://www.jd.com",
+      "prototype_data_category":"分类3",
+      "prototype_data_remark": "京东首页",
+      "prototype_data_create_time": "2020-06-27-10-00-00",
+      "prototype_data_is_delete": false
+}
+
+### 删除url（根据ID）
+DELETE    {{url}}/delete_prototype_data HTTP/1.1
+{{type_json}}
+
+{
+    "prototype_data_id": "7"
+}
+
+### 登录
+POST  {{url}}/login HTTP/1.1
+{{type_json}}
+
+{
+     "user_name":"admin",
+     "password":"123456"
+}
+
+### 文件下载 txt
+GET  {{url}}/download_demo/download/?type=txt HTTP/1.1
+
+### 文件下载 jpeg
+GET  {{url}}/download_demo/download/?type=jpeg HTTP/1.1
+
+### 首页
+GET {{url}}/index.htm HTTP/1.1
+
+### 模块化router
+GET {{url}}/module_router/home HTTP/1.1
+
+### 访问静态文件
+GET {{url}}/video HTTP/1.1
+{{type_mp4}}
+
+### 访问静态文件
+GET  {{url}}/1.jpeg HTTP/1.1

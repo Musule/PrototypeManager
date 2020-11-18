@@ -1,0 +1,63 @@
+{
+  "user": [
+    {
+      "user_id": "1",
+      "user_name": "admin",
+      "password": "123456",
+      "function_permission": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "user_create_time": "2020-06-27-14-00-00",
+      "user_is_delete": false
+    },
+    {
+      "user_id": "2",
+      "user_name": "admin2",
+      "password": "123456",
+      "function_permission": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "user_create_time": "2020-06-27-15-00-00",
+      "user_is_delete": false
+    },
+    {
+      "user_id": "3",
+      "user_name": "liyinchi",
+      "password": "",
+      "function_permission": [
+        1,
+        2,
+        3
+      ],
+      "user_create_time": "2020-5-28-21-25-51",
+      "user_is_delete": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "prototype-manager",
+  "version": "1.0.0",
+  "description": "产品原型管理工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "李银池 <liyinchi@qq.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:Musule/PrototypeManager.git"
+  },
+  "keywords": [
+    "image"
+  ],
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^4.1.0",
+    "cookie-parser": "^1.4.5",
+    "delete": "^1.1.0",
+    "delete-empty": "^3.0.0",
+    "express": "^4.16.4",
+    "express-formidable": "^1.2.0",
+    "jquery": "^3.5.1",
+    "log4js": "^6.3.0",
+    "lowdb": "^1.0.0",
+    "mongodb": "^3.1.10",
+    "multer": "^1.4.1",
+    "mysql": "^2.16.0",
+    "nodemon": "^2.0.4",
+    "unzip-zhcn": "^1.0.3"
+  }
+}
