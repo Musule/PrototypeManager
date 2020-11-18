@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/vue-lowdb.svg)](https://www.npmjs.com/package/vue-lowdb) [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 
-> 产品原型压缩版管理
+> 产品原型压缩包管理
 
 ## 功能
 
