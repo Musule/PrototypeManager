@@ -4,6 +4,8 @@
 
 > 产品原型压缩包管理
 
+![img](static/image/demo.gif)
+
 ## 功能
 
 * 新增分类
