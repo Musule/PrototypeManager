@@ -8,11 +8,11 @@
 
 ## 功能
 
-* 新增分类
+* 新建分类
 * 删除分类
 * 编辑分类
 * 查询分类
-* 新增原型版本
+* 新建原型版本
 * 删除原型版本
 * 编辑原型版本
 * 查询原型版本
@@ -40,6 +40,9 @@
 1.下载Nodejs
 
 >http://nodejs.cn/download/
+
+（建议版本使用v12.13.0及以上）
+
 
 2.安装Nodejs
 
@@ -126,7 +129,7 @@ npm run dev
 ![img](static/image/add_url.jpg)
 
 
-## 新增分类
+## 新建分类
 
 ![img](static/image/add_category.jpg)
 
@@ -135,7 +138,7 @@ npm run dev
 
 ![img](static/image/add_category2.jpg)
 
-## 新增账号
+## 新建账号
 
 ![img](static/image/add_username.jpg)
 
