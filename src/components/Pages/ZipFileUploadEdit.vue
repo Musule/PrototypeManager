@@ -8,6 +8,9 @@
       accept=".zip"
       :on-preview="handlePreview"
       :on-remove="handleRemove"
+      :on-success="handleAvatarSuccess"
+      :on-error="handleAvatarError"
+      :before-remove="beforeRemove"
       :limit="1"
       :file-list="fileList"
       :auto-upload="false"
@@ -66,9 +69,15 @@ export default {
       ];
       this.$emit("ChildByValueZipFileUploadEdit", arr);
       console.log(arr);
+      // 消息提示（成功）
+      this.$message({
+          message: '上传成功',
+          type: 'success'
+        });
     },
     handleAvatarError(err, file, fileList) {
-      alert("上传失败" + err);
+      // 消息提示（失败）
+       this.$message.error(`上传失败${err}`);
     },
   },
 };
