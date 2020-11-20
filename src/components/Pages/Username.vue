@@ -246,7 +246,7 @@
           tableData.slice((currentPage - 1) * PageSize, currentPage * PageSize)
         "
         style="width: 100%"
-        :default-sort="{ prop: 'user_name', order: 'descending' }"
+        :default-sort="{ prop: 'user_create_time', order: 'descending' }"
       >
         <el-table-column
           type="index"
@@ -719,9 +719,33 @@ export default {
       const property = column["property"];
       return row[property] === value;
     },
+ /**
+     * @description 获取当前时间 格式：年-月-日-时-分-秒
+     */
     getTime() {
-      var D = new Date();
-      return `${D.getFullYear()}-${D.getMonth()}-${D.getDate()}-${D.getHours()}-${D.getMinutes()}-${D.getSeconds()}`;
+      var date = new Date();
+      var month = date.getMonth() + 1;
+      var strDate = date.getDate();
+      if (month >= 1 && month <= 9) {
+        month = "0" + month;
+      }
+      if (strDate >= 0 && strDate <= 9) {
+        strDate = "0" + strDate;
+      }
+      var currentDate1 =
+        date.getFullYear() +
+        "-" +
+        month +
+        "-" +
+        strDate +
+        "-" +
+        date.getHours() +
+        "-" +
+        date.getMinutes() +
+        "-" +
+        date.getSeconds();
+      var currentDate2 = `${date.getFullYear()}${month}${strDate}${date.getHours()}${date.getMinutes()}${date.getSeconds()}`;
+      return currentDate1;
     },
     formatter(row, column) {
       var array = row.function_permission;
