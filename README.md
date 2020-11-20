@@ -6,6 +6,8 @@
 
 ![img](static/image/demo.gif)
 
+recommend: [China-Gitee](https://gitee.com/liyinchi/PrototypeManager)，[Other-Github](https://github.com/Musule/PrototypeManager)
+
 ## 功能
 
 * 新建分类
