@@ -70,6 +70,11 @@ cd /PrototypeManager/server
 ```
 ② 执行安装
 
+* 安装cnpm
+```
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+* 安装所有依赖库
 ```bash
 cnpm install
 ```
@@ -90,11 +95,6 @@ cd /PrototypeManager
 ```
 
 ②安装
-
-* 安装cnpm
-```
-npm install -g cnpm --registry=https://registry.npm.taobao.org
-```
 
 * 安装node-sass
 ```bash
