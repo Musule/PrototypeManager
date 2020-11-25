@@ -3,7 +3,7 @@
     {
       "user_id": "01",
       "user_name": "admin",
-      "password": "",
+      "password": "123456",
       "function_permission": [
         1,
         2,
