@@ -142,6 +142,9 @@ npm run dev
 
 >访客无需登录，仅有查看权限
 
+修改每个账号的密码，可以通过PrototypeManager\server\public\User.json
+
+
 ## 新增原型版本
 
 ![img](static/image/add_url.jpg)
