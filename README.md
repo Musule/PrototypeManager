@@ -35,15 +35,16 @@ recommend: [China-Gitee](https://gitee.com/liyinchi/PrototypeManager)，[Other-G
 
 |名称|版本|
 |-|-|
-|nodejs|v12.13.0|
+|nodejs| v12.13.0|
 |vue|v2.5.2|
+
 
 ## 安装
 1.下载Nodejs
 
->http://nodejs.cn/download/
+>https://npm.taobao.org/mirrors/node/v0.12.13/
 
-（建议版本使用v12.13.0及以上）
+（建议版本使用v12.13.0 小于v15.0）
 
 
 2.安装Nodejs
@@ -61,32 +62,40 @@ npm config set registry http://registry.npm.taobao.org/
 
 3.安装与使用
 
-（1）服务端
+* 克隆工程
 
-① 打开终端窗口，进入目录/PrototypeManager/server下
+```bash
+git clone git@github.com:Musule/PrototypeManager.git
+```
+
+（1）启动服务端
+
+① 打开cmd终端窗口，进入目录/PrototypeManager/server下（window 不要用 powser shell）
 
 ```bash
 cd /PrototypeManager/server
 ```
-② 执行安装
+② 执行安装命令
 
 * 安装cnpm
 ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 * 安装所有依赖库
+
 ```bash
 cnpm install
 ```
 
-③启动后端
+③启动后端服务
+
 ```bash
-nodemon server
+node server
 ```
 
 ![img](static/image/back-end-server.png)
 
-（2）前端
+（2）启动前端
 
 ①再次打开新的cmd终端窗口，进入目录/PrototypeManager下，执行命令行如下命令：
 
@@ -100,19 +109,26 @@ cd /PrototypeManager
 ```bash
 cnpm install node-sass --save
 ```
-* 安装
+
+* 安装所有依赖库
+
 ```bash
 cnpm install
 ```
+
 ③启动前端
+
 ```bash
 npm run dev
 ```
+
 ![img](static/image/front-end-server.png)
 
 （3）浏览器地址访问
 >http://localhost:8088
 
+
+你也可以直接访问工程底下根目录dist文件夹，打开index.html
 
 
 # 操作手册
